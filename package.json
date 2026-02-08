@@ -3,16 +3,27 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "NODE_OPTIONS=--dns-result-order=ipv4first expo start",
+    "android": "NODE_OPTIONS=--dns-result-order=ipv4first expo run:android",
+    "ios": "NODE_OPTIONS=--dns-result-order=ipv4first expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@craftzdog/react-native-buffer": "^6.1.1",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@solana-mobile/mobile-wallet-adapter-protocol": "^2.2.5",
+    "@solana-mobile/mobile-wallet-adapter-protocol-web3js": "^2.2.5",
+    "@solana/web3.js": "^1.98.4",
     "expo": "~54.0.33",
+    "expo-dev-client": "~6.0.20",
     "expo-status-bar": "~3.0.9",
+    "fastestsmallesttextencoderdecoder": "^1.0.22",
     "react": "19.1.0",
-    "react-native": "0.81.5"
+    "react-native": "0.81.5",
+    "react-native-get-random-values": "^2.0.0",
+    "react-native-quick-base64": "^2.2.2",
+    "react-native-safe-area-context": "~5.6.0",
+    "text-encoding": "^0.7.0"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
