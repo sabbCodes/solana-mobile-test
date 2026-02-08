@@ -4,8 +4,7 @@ export const APP_IDENTITY = {
   icon: 'favicon.ico', // Relative to uri
 };
 
-// export const RPC_ENDPOINT = 'https://api.devnet.solana.com';
-export const RPC_ENDPOINT = 'https://devnet.helius-rpc.com/?api-key=0956b94b-51c1-4add-a9d0-37ed87d401d6';
+export const RPC_ENDPOINT = 'https://api.devnet.solana.com';
 
 export const CLUSTER = 'solana:devnet' as const;
 
