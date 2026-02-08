@@ -6,6 +6,7 @@ export const APP_IDENTITY = {
 
 export const RPC_ENDPOINT = 'https://api.devnet.solana.com';
 
+
 export const CLUSTER = 'solana:devnet' as const;
 
 // Alternative endpoints for production
